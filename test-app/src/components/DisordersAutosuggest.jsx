@@ -26,7 +26,6 @@ export default class DisordersAutosuggest extends React.Component {
   // input value for every given suggestion.
   getSuggestionValue = (suggestion) => {
     this.props.suggestCallback(suggestion);
-
     return suggestion.term + ' (SCTID: ' + suggestion.concept.conceptId + ')';
   }
   
