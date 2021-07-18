@@ -22,10 +22,13 @@ export const Semantic = class Semantic extends React.Component {
   suggestCallback = (suggestion) => {
     if (!suggestion) return;
 
-    const codeSystemResult = suggestion.$codeSystemResult;
-    const code = codeSystemResult.code;
+    // const codeSystemResult = suggestion.$codeSystemResult;
+    // const code = codeSystemResult.code;
 
-    const url = helsedirBaseUrl + "&kode=" + code;
+    // const url = helsedirBaseUrl + "&kode=" + code;
+   
+
+    const url = helsedirBaseUrl;
     this.fetchContent(url);
   }
 
@@ -135,7 +138,7 @@ export const Semantic = class Semantic extends React.Component {
                         <div className="col-sm-12">
                             <DisordersAutosuggest 
                                 suggestCallback={()=>{}} 
-                                codeSystem="ICPC-2"/>
+                            />
                         </div>
                     </div>
 

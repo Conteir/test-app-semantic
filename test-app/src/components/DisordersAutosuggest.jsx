@@ -1,6 +1,6 @@
 import React from 'react';
 import Autosuggest from 'react-autosuggest';
-import { snomedURLs, conceptRefsetLegemidler, conceptRefsetSaturdayNightFeverRusmidler, conceptRefsetToxicBeautyPlanter } from '../config.ts';
+import { snomedURLs, conceptRefsetLegemidler, conceptRefsetSaturdayNightFeverRusmidler, conceptRefsetToxicBeautyPlanter, conceptGasserOgKjemikalier } from '../config.ts';
 import './DisordersAutoSuggest.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Spinner } from 'reactstrap';
@@ -54,7 +54,8 @@ export default class DisordersAutosuggest extends React.Component {
         let refsets = [
           conceptRefsetLegemidler,
           conceptRefsetSaturdayNightFeverRusmidler,
-          conceptRefsetToxicBeautyPlanter
+          conceptRefsetToxicBeautyPlanter,
+          conceptGasserOgKjemikalier
         ];
 
         refsets.forEach(refset => {

@@ -55,6 +55,8 @@ export const codeSystems = [
   export let conceptRefsetLegemidler = '23951000202100';
   export let conceptRefsetSaturdayNightFeverRusmidler = '23971000202106';
   export let conceptRefsetToxicBeautyPlanter = '23981000202108';
+  export let conceptGasserOgKjemikalier = '27011000202108';
+
 
   export let conceptRefset = '23951000202100';
   export let urlParameters: string = '?limit=10&active=true&groupByConcept=true&language=no&language=nb&language=nn&language=en&conceptActive=true';
